@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color:  lightcyan;
+        }
+        .box {
+            width:5%;
+			border: 1px solid aqua; 
+            padding: 10px;
+            text-align: center; 
+        }
+		.box1 {
+		    width:200px;
+            height: 40px;
+			background-color:rgb(30, 236, 255);
+			margin: 0 auto; 
+            display:flex;
+            align-items: center;
+			color:white;
+            justify-content: center;
+        }
+		section{
+            background-color:white;
+            display:flex;
+            color:white;
+            padding:0;
+            margin:0;
+		}
+        ul {
+            display: flex;
+		    list-style-type: none;
+		    justify-content: space-evenly;
+		}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+		}
+        .color
+        {
+            color: rgb(0, 174, 255);
+        }
+		.box2{
+            width:15%;
+            border-radius:150px;
+            margin-left:100px;
+            background-color:lightgray;
+            text-align:center;
+            margin: 0 auto; 
+            color:aqua;
+		}
+        .div2{
+            justify-content: space-evenly;
+        }
+        .div2 img
+        {
+            padding: 20px;
+            margin-right: 100px;
+            float: right;
+            width: 300px;
+        }
+		.box3{
+            width:15%;
+            border-radius:150px;
+            margin-left:100px;
+            background-color:lightgray;
+            text-align:center; 
+            color:aqua;
+		}
+		.tool{
+		    text-align: left;
+            text-indent: 100px;
+		}
+		.tool1{
+            width:150px;
+            height: 40px;
+			background-color:rgb(30, 236, 255);
+            display:flex;
+            margin:10px 0;
+            color:white;
+            align-items: center;
+            justify-content: center;
+		}
+        .containerGrid
+        {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:50px;
+        margin: 50px 200px;
+    }
+.imgGrid1
+{
+    background-color:rgb(255, 246, 247);
+    padding:20px;
+    width: 200px;
+}
+.imgGrid2
+{
+    background-color:rgb(260, 230, 255);
+    padding:20px;
+    width: 200px;
+}
+.imgGrid3
+{
+    background-color:rgb(230, 254, 255);
+    padding:20px;
+    width: 200px;
+}
+.imgGrid4
+{
+    background-color:rgb(251, 246, 258);
+    padding:20px;
+    width: 200px;
+}
+.imgGrid5
+{
+    background-color:rgb(252, 246, 247);
+    padding:20px;
+    width: 200px;
+}
+.imgGrid6
+{
+    background-color:rgb(253, 233, 236);
+    padding:20px;
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Testimonials</li>
+                <li>Resources</li>
+				<li><img src="circle.png" alt="circle"></li>
+                <li>Company</li>
+                <li>Contact</li>
+                <li class="box">Login</li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1 align="center">A powerful online engagement tool <br>that’s intuitive and simple to use.</h1>
+        <p align="center">With stellar one-click reports and unmatched support, see how<br>Circle will make a difference in your business.</p>
+        <div class="box1">
+            Get started free > 
+        </div><br>
+    </div><section><img src="pic.jpg" alt="pic" class="center"></section><br><br>
+	<div class="box2">
+	    OUR CUSTOMERS
+		<br>
+	</div><p align="center">Trusted by <strong>100,000+ customers</strong> in 90+ countries</p>
+	<nav1>
+        <ul>
+            <li><span class="color">✔ <b>18281</b> </span>sined up last month</li>
+            <li><span class="color">✔ <b>GDPR</b></span>- & <span class="color"><b>CCPA</b></span>-ready</li>
+            <li><span class="color">✔ <b>Leader@G2</b></span> Summer</li>
+        </ul><hr style="width:75%;border-color: lightgray;">
+    </nav1><br><br>
+    <div class="div2">
+        <div class="img2">
+            <img src="office.png" alt="office"><br>
+        </div>
+        <div class="box3">
+            OUR PROMISE
+        </div>
+        <h2><p class="tool">Tool <b>built for people.</b></h2></p>
+        <p class="tool">Whether you want to edit your Google Docs,<br>
+        <p class="tool">resolve Jira issues, or collaborate over Zoom.<br><br>
+        <p class="tool">Circle has 100+ integrations with tools you <br>
+        <p class="tool">already use and love.</p>
+    	<div class="tool1">
+            Get started free > 
+        </div><br>
+    </div>
+    <hr style="width:75%;border-color: lightgray;">
+    <div class="div3">
+        <p class="box2">AWARDS</p><br>
+        <p align="center">An <b>award winning</b> platform, <b>loved by customers.</b></p>
+        <div class="containerGrid">
+            <div class="imgGrid1"><br><img src="div3img1.png" alt="img1"></div>
+            <div class="imgGrid2"><br><img src="div3img2.png" alt="img2"></div>
+            <div class="imgGrid3"><br><img src="div3img3.png" alt="img3"></div>
+            <div class="imgGrid4"><br><img src="div3img4.png" alt="img4"></div>
+            <div class="imgGrid5"><br><img src="div3img5.png" alt="img5"></div>
+            <div class="imgGrid6"><br><img src="div3img6.png" alt="img6"></div>   
+        </div>
+        <br><hr>
+    </div>
+</body>
+</html>
