@@ -42,6 +42,11 @@
             margin-right: auto;
             width: 50%;
 		}
+        .order {
+            display:flex;
+            justify-content: space-evenly;
+
+        }
         .color
         {
             color: rgb(0, 174, 255);
@@ -50,7 +55,7 @@
             width:15%;
             border-radius:150px;
             margin-left:100px;
-            background-color:lightgray;
+            background-color:lightseagreen;
             text-align:center;
             margin: 0 auto; 
             color:aqua;
@@ -61,21 +66,32 @@
         .div2 img
         {
             padding: 20px;
-            margin-right: 100px;
+            margin-right: 250px;
             float: right;
             width: 300px;
         }
+        .img3 {
+    float: right; /* Align the image to the right */
+    margin-left: 20px; /* Add some margin for spacing */
+}
+
+.text-container {
+    text-align: left; /* Align the text to the left */
+    text-indent: 20px; /* Adjust text indentation */
+    max-width: 50%; /* Limit the maximum width of the text container */
+}
+
 		.box3{
             width:15%;
             border-radius:150px;
-            margin-left:100px;
+            margin-left:200px;
             background-color:lightgray;
             text-align:center; 
             color:aqua;
 		}
 		.tool{
 		    text-align: left;
-            text-indent: 100px;
+            text-indent: 200px;
 		}
 		.tool1{
             width:150px;
@@ -84,52 +100,76 @@
             display:flex;
             margin:10px 0;
             color:white;
+            margin-left:200px;
             align-items: center;
             justify-content: center;
 		}
         .containerGrid
         {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap:50px;
-        margin: 50px 200px;
-    }
-    .imgGrid1
-    {
-        background-color:rgb(255, 246, 247);
-        padding:20px;
-        width: 200px;
-    }
-    .imgGrid2
-    {
-        background-color:rgb(260, 230, 255);
-        padding:20px;
-        width: 200px;
-    }
-    .imgGrid3
-    {
-        background-color:rgb(230, 254, 255);
-        padding:20px;
-        width: 200px;
-    }
-    .imgGrid4
-    {
-        background-color:rgb(251, 246, 258);
-        padding:20px;
-        width: 200px;
-    }
-    .imgGrid5
-    {
-        background-color:rgb(252, 246, 247);
-    padding:20px;
-    width: 200px;
-}
-.imgGrid6
-{
-    background-color:rgb(253, 233, 236);
-    padding:20px;
-    width: 200px;
-}
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            margin: 20px;
+        }
+        .imgGrid1
+        {
+            background-color:antiquewhite;
+            padding:20px;
+            margin:50px;
+            height:auto;
+            text-align: center;
+        }
+        .imgGrid2
+        {
+            background-color:antiquewhite;
+            padding:20px;
+            margin:50px;
+            height:auto;
+            text-align: center;
+        } 
+        .imgGrid3
+        {
+            background-color:antiquewhite;
+            padding:20px;
+            margin:50px;
+            height:auto;
+            text-align: center;
+        }
+        .imgGrid4
+        {
+            background-color:antiquewhite;
+            padding:20px;
+            margin:50px;
+            height:auto;
+            text-align: center;
+        }
+        .imgGrid5
+        {
+            background-color:antiquewhite;
+            padding:20px;
+            margin:50px;
+            height:auto;
+            text-align: center;
+        }
+        .imgGrid6
+        {
+            background-color:antiquewhite;
+            padding:20px;
+            margin:50px;
+            height:auto;
+            text-align: center;
+        }
+        .containers 
+        {
+            text-align:left;
+            margin :100px; 
+        }
+        .containers_table 
+        {
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
@@ -159,6 +199,15 @@
 		<br>
 	</div><p align="center">Trusted by <strong>100,000+ customers</strong> in 90+ countries</p>
 	<nav1>
+        <ul class="order">
+            <li><img src="img1.jpg" alt="img1"></li>
+            <li><img src="img2.jpg" alt="img2"></li>
+            <li><img src="img3.jpg" alt="img3"></li>
+            <li><img src="img 4.jpg"alt="img4"></li>            
+            <li><img src="img5.jpg" alt="img5"></li>
+            <li><img src="img6.jpg" alt="img6"></li>
+            <br>
+        </ul>
         <ul>
             <li><span class="color">✔ <b>18281</b> </span>sined up last month</li>
             <li><span class="color">✔ <b>GDPR</b></span>- & <span class="color"><b>CCPA</b></span>-ready</li>
@@ -185,15 +234,84 @@
     <div class="div3">
         <p class="box2">AWARDS</p><br>
         <p align="center">An <b>award winning</b> platform, <b>loved by customers.</b></p>
-        <div class="containerGrid">
-            <div class="imgGrid1"><br><img src="div3img1.png" alt="img1"></div>
-            <div class="imgGrid2"><br><img src="div3img2.png" alt="img2"></div>
-            <div class="imgGrid3"><br><img src="div3img3.png" alt="img3"></div>
-            <div class="imgGrid4"><br><img src="div3img4.png" alt="img4"></div>
-            <div class="imgGrid5"><br><img src="div3img5.png" alt="img5"></div>
-            <div class="imgGrid6"><br><img src="div3img6.png" alt="img6"></div>   
-        </div>
-        <br><hr>
+        <div1 class="containerGrid">
+            <div1 class="imgGrid1"><img src="img1.png" alt="img1" ><b><br>Market leader across <br>18 categories</b></div1>
+            <div1 class="imgGrid2"><img src="img2.png" alt="img2" ><b><br>Most loved SaaS tool <br>in 2021</b></div1>
+            <div1 class="imgGrid3"><img src="img3.png" alt="img3" ><b><br>Category leader in <br>2022</b></div1>
+            <div1 class="imgGrid4"><img src="img4.png" alt="img4" ><b><br>Most recommended <br>tool in 2021</b></div1>
+            <div1 class="imgGrid5"><img src="img5.png" alt="img5" ><b><br>Champion in survey<br>tool 2022</b></div1>
+            <div1 class="imgGrid6"><img src="img6.png" alt="img6" ><b><br>Top performer spring <br>2021</b></div1>
+        </div1>
+    <br><hr style="width:75%;border-color: lightgray;">
     </div>
+    <div class="div2">
+        
+        <p class="box2">BUILT FOR PEOPLE</p><br>
+        <p style="font-size: 20px"align="center";>An <b>award winning</b> platform, <b>loved by customers.</b></p>
+        <div class="img2">
+            <img src="text1.png" alt="text1"/>
+        </div>
+        <p class="tool"><b>Create</b></p>
+        <p class="tool"><b>Advanced research software</b></p> 
+        <p class="tool"> Ask the right questions and get the answers you<br>
+        <p class="tool">need with the most secure and collaborative<br>
+        <p class="tool">survey platform on the market featuring<br>
+        <p class="tool">powerful logic, sophisticated analytics, and<br>
+        <p class="tool">built-in automation and integration.</p>
+        <div class="tool1">
+            Get started free > 
+        </div>
+    </div>
+    <div class="div2">
+        
+        <h3><p style="font-size:30px;">Looking for a <b>solution</b><br>for your business?</p></h3>
+        <div class="img2">
+            <img src="image.png" alt="image"/>
+        </div>
+        <div class="text-container">
+            <p class="tool"><i>Check out Sogolytics enterprise feedback and </i></p>
+            <p class="tool"><i>experience management platform.</i></p>
+            <p class="tool"><button type="button" onclick="alert('LEARN MORE')">LEARN MORE</button><br></p>
+        </div>
+        
+    </div>
+    <hr>
+    <p style="text-align: center;font-size:30px"><b>RESOURCES</b></p>
+    <p style="text-align: center; " style="font-style: oblique;font-size: 30px;">An <strong>Stay </strong> in the  <strong> know</strong>
+  </p>
+<div2 style="text-align: justify;">
+<div1 class="containers_01" style="text-align: justify;">
+    <div1 class="items_01"><img src="res1.png" alt="res1" height="200" width="300">
+        <h2 style="font-style: oblique;text-align: justify;">Excepteur sint occaecat cupidatat
+        non proident</h2><p style="font-style: oblique;text-align: justify;">Nemo enim ipsam voluptatem quia
+            voluptas sit aspernatur aut odit aut fugit,
+            sed quia consequuntur magni dolores eos</p><p style="font-style: oblique;text-align: justify;">Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur,
+                adipisci veli</p>
+                <div class="left">
+                    <p style="text-decoration: none;">READ MORE</p>
+                  </div></div1>
+    <div1 class="items_02"><img src="res2.png" alt="res2" height="200" width="300">
+        <h2 style="font-style: oblique;text-align: justify;">Quis nostrum exercitationem ullam
+        corporis suscipit laboriosam</h2><p style="font-style: oblique;text-align: justify;">Ut enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam.</p><p style="font-style: oblique;text-align: justify;">nisi ut aliquid ex ea commodi consequatur
+                autem vel eum iure reprehenderit</p></p>
+                <div class="left">
+                    <p style="text-decoration: none;">READ MORE</p>
+                  </div></div1>
+    <div1 class="items_03"><img src="res3.png" alt="res3" height="200" width="300">
+        <h2 style="font-style: oblique;text-align: justify;">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.</h2><p style="font-style: oblique;text-align: justify;">Coluptatem accusantium doloremque
+            laudantium, totam rem aperiam</p><p style="font-style: oblique;text-align: justify;">Aaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt
+                    explicabo.</p>&emsp;</p>
+                    <div class="left">
+                        <p style="text-decoration: none;">READ MORE</p>
+                      </div></div1>
+    
+</div1>
+    
+    
 </body>
 </html>
