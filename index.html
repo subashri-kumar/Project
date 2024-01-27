@@ -61,26 +61,24 @@
             color:aqua;
 		}
         .div2{
-            justify-content: space-evenly;
+            justify-content: space-between;
+        }
+        .text-container {
+            text-align: left;
+            max-width: 50%;
+        }
+        .text-container p {
+            font-style: italic;
+            margin-bottom: 10px;
         }
         .div2 img
         {
-            padding: 20px;
+            padding: 10px;
             margin-right: 250px;
             float: right;
             width: 300px;
+            margin-left: 20px;
         }
-        .img3 {
-    float: right; /* Align the image to the right */
-    margin-left: 20px; /* Add some margin for spacing */
-}
-
-.text-container {
-    text-align: left; /* Align the text to the left */
-    text-indent: 20px; /* Adjust text indentation */
-    max-width: 50%; /* Limit the maximum width of the text container */
-}
-
 		.box3{
             width:15%;
             border-radius:150px;
@@ -164,11 +162,46 @@
             text-align:left;
             margin :100px; 
         }
-        .containers_table 
+        .containers_01
         {
             display: grid;
             grid-template-columns:repeat(3, 1fr);
-            gap: 20px;
+            gap: 50px;
+        }
+        .div4-text-and-image-container 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: auto;
+            margin-top: 100px;
+            background-color: rgb(228, 255, 246);
+        }
+        .div4-text-container 
+        {
+            text-align: left;
+            font-size: larger;
+            margin: 150px;
+            margin-right: 30px;
+        }
+        .div4-image-container 
+        {
+            text-align: right;
+            margin: 300px;
+        }
+        .div4-image-container img 
+        {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50;
+        }
+        .p5-buttons-container 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px; 
         }
     </style>
 </head>
@@ -262,24 +295,26 @@
             Get started free > 
         </div>
     </div>
-    <div class="div2">
-        
-        <h3><p style="font-size:30px;">Looking for a <b>solution</b><br>for your business?</p></h3>
-        <div class="img2">
-            <img src="image.png" alt="image"/>
+    <div class="div4-text-and-image-container">
+        <div class="div4-text-container">
+            <h2>Looking for a <span style="font-weight:bolder;">solution</span></h2>
+            <h2>for your business?</h2>
+            <p><i>Check out Sogolytics enterprise feedback and</i></p>
+            <p style="font: weight 1px;;"><i>experience management platform.</i></p>
+            <div class="div4-buttons-container">
+              <a href><button type="button" style="background-color: aqua; padding: 10px;">Learn More</button></a>
+            <a href><button type="button" style="background-color: white; border-color: aqua; border-style: double; color: aqua; padding: 10px; font-weight: bolder;">Schedule a consultation</button></a>
+            </div>
+            
         </div>
-        <div class="text-container">
-            <p class="tool"><i>Check out Sogolytics enterprise feedback and </i></p>
-            <p class="tool"><i>experience management platform.</i></p>
-            <p class="tool"><button type="button" onclick="alert('LEARN MORE')">LEARN MORE</button><br></p>
-        </div>
-        
-    </div>
-    <hr>
-    <p style="text-align: center;font-size:30px"><b>RESOURCES</b></p>
-    <p style="text-align: center; " style="font-style: oblique;font-size: 30px;">An <strong>Stay </strong> in the  <strong> know</strong>
-  </p>
+        <div class="div4-image-container"><img src="image.png"alt="image" height="600" width="400"></div>
+     </div>
+     
+    
 <div2 style="text-align: justify;">
+    <p style="text-align: center;font-size:30px"><b>RESOURCES</b></p>
+    <p style="text-align: center; " style="font-style: oblique;font-size: 30px;"><strong>Stay </strong> in the  <strong> know</strong>
+  </p>
 <div1 class="containers_01" style="text-align: justify;">
     <div1 class="items_01"><img src="res1.png" alt="res1" height="200" width="300">
         <h2 style="font-style: oblique;text-align: justify;">Excepteur sint occaecat cupidatat
@@ -288,29 +323,58 @@
             sed quia consequuntur magni dolores eos</p><p style="font-style: oblique;text-align: justify;">Neque porro quisquam est, qui dolorem
                 ipsum quia dolor sit amet, consectetur,
                 adipisci veli</p>
-                <div class="left">
-                    <p style="text-decoration: none;">READ MORE</p>
-                  </div></div1>
+                <button>READ MORE</button></div1>
     <div1 class="items_02"><img src="res2.png" alt="res2" height="200" width="300">
         <h2 style="font-style: oblique;text-align: justify;">Quis nostrum exercitationem ullam
         corporis suscipit laboriosam</h2><p style="font-style: oblique;text-align: justify;">Ut enim ad minima veniam, quis nostrum
             exercitationem ullam corporis suscipit
             laboriosam.</p><p style="font-style: oblique;text-align: justify;">nisi ut aliquid ex ea commodi consequatur
-                autem vel eum iure reprehenderit</p></p>
-                <div class="left">
-                    <p style="text-decoration: none;">READ MORE</p>
-                  </div></div1>
+                autem vel eum iure reprehenderit</p>
+                <button>READ MORE</button></div1>
     <div1 class="items_03"><img src="res3.png" alt="res3" height="200" width="300">
         <h2 style="font-style: oblique;text-align: justify;">Lorem ipsum dolor sit amet,
         consectetur adipiscing elit.</h2><p style="font-style: oblique;text-align: justify;">Coluptatem accusantium doloremque
             laudantium, totam rem aperiam</p><p style="font-style: oblique;text-align: justify;">Aaque ipsa quae ab illo inventore veritatis et
                     quasi architecto beatae vitae dicta sunt
-                    explicabo.</p>&emsp;</p>
-                    <div class="left">
-                        <p style="text-decoration: none;">READ MORE</p>
-                      </div></div1>
-    
-</div1>
+                    explicabo.</p>
+                    <button>READ MORE</button></div1>
+    </div1><br>
+    <footer style="background-color: black; color:blue; text-align: center; padding: 10px;">
+        <div style="display: flex; justify-content: space-evenly;">
+            <div>
+                <h2>Products</h2>
+                <p>Delta</p>
+                <p>Sigma</p>
+                <p>Zeta</p>
+                <p>Alpha</p>
+                <p>Acumen</p>
+            </div>
+            <div>
+                <h2>Resources</h2>
+                <p>Help</p>
+                <p>Training Videos</p>
+                <p>Webinars</p>
+                <p>Alpha</p>
+                <p>Create Surveys</p>
+                <p>Quiz Maker</p>
+            </div>
+            <div>
+                <h2>Company</h2>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Team</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <p style="margin-top: 20px;">&copy; 2024 Your Company. All rights reserved. 
+            <span style="margin-left: 10px;">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Data & Security</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Data & Security</a>
+            </span>
+        </p>
+    </footer>
     
     
 </body>
